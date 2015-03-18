@@ -23,14 +23,14 @@ module Shopware
                     children_count = category['childrenCount']
                     article_count  = category['articleCount']
 
-                    table = Terminal::Table.new headings: ['Property', 'Value'] do |table|
-                      table << ['ID', id]                         if id
-                      table << ['Name', name]                     if name
-                      table << ['Active', active]                 if active
-                      table << ['Position', position]             if position
-                      table << ['Parentable ID', parent_id]       if parent_id
-                      table << ['Children count', children_count] if children_count
-                      table << ['Article count', article_count]   if article_count
+                    table = Terminal::Table.new headings: ['Property', 'Value'] do |tb|
+                      tb << ['ID', id]                         if id
+                      tb << ['Name', name]                     if name
+                      tb << ['Active', active]                 if active
+                      tb << ['Position', position]             if position
+                      tb << ['Parentable ID', parent_id]       if parent_id
+                      tb << ['Children count', children_count] if children_count
+                      tb << ['Article count', article_count]   if article_count
                     end
 
                     puts table

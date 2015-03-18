@@ -1,6 +1,7 @@
 /.bundle/
 /.ruby-gemset
 /.ruby-version
+/.project
 /.shopware
 /data/
 /Gemfile.lock

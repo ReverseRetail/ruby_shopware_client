@@ -18,9 +18,9 @@ module Shopware
                     id   = article['id']
                     name = article['name']
 
-                    table = Terminal::Table.new headings: ['Property', 'Value'] do |table|
-                      table << ['ID', id]     if id
-                      table << ['Name', name] if name
+                    table = Terminal::Table.new headings: ['Property', 'Value'] do |tb|
+                      tb << ['ID', id]     if id
+                      tb << ['Name', name] if name
                     end
 
                     puts table
